@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="plan.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Meal Plan</h1>
+
+    <h3>Enter timeframe (day or week)</h3>
+    <input type="text" name="timeFrame" id="timeFrame">
+    
+    <h3>Enter target calories</h3>
+    <input type="text" name="calories" id="targetCalories">
+    
+    <h3>Enter diet (Click <a href="https://spoonacular.com/food-api/docs#Diets">here</a> to view available diets )</h3>
+    <input type="text" name="diet" id="diet">
+
+    <h3>Enter what to exclude (eg. shelfish, olives)</h3>
+    <input type="text" name="exclude" id="exclude">
+    
+    <br><br>
+    
+    
+    <button class="button"type="button" onclick="loadData('https://api.spoonacular.com/mealplanner/generate?apiKey=')">Create Plan</button>
+    
+    <ul id ="targetMeal"></ul>
+    
+    <ul id ="targetNutrients"></ul>
+
+
+</body>
+</html> 
